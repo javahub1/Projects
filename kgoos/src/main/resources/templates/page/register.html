@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta content="text/html;charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-language" content="zh-CN"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link th:href="@{/css/normalize.css}" rel="stylesheet"/>
+    <link th:href="@{/css/owl.carousel.css}" rel="stylesheet"/>
+    <link th:href="@{/css/jquery-ui.css}" rel="stylesheet"/>
+    <link th:href="@{/css/main.css}" rel="stylesheet"/>
+    <script type="text/javascript" th:src="@{/framewk/jquery-1.10.2.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/jquery-ui.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/owl.carousel.js}"></script>
+    <script type="text/javascript" th:src="@{/js/script.js}"></script>
+    <script type="text/javascript" th:src="@{/js/formenu.js}"></script>
+
+    <link rel="stylesheet" th:href="@{/css/user/base_input.css}" type="text/css"/>
+    <link rel="stylesheet" th:href="@{/css/user/reg_login.css}" type="text/css"/>
+    <script type="text/javascript" th:src="@{/js/user/register_check.js}"></script>
+    <link rel="shortcut icon" th:href="@{/images/user/20logo.png}"/>
+    <link rel="Bookmark" href="@{/images/user/20logo.png}"/>
+    <title>会员注册</title>
+</head>
+<body>
+
+<div class="logheader">
+    <div class="logobar">
+        <img th:src="@{/images/user/login_logo.png}"
+             alt="KGOOS 集运"/>
+    </div>
+    <div class="tofirstpgbar">
+        <img th:src="@{/images/user/loginandreg/login_home.png}" alt="回首頁"/>
+        <a href="/">回到首頁</a>
+    </div>
+</div>
+<div class="bodymain_full">
+    <div class="bodymain_1300">
+        <div class="regcontent">
+            <div class="center_left">
+                <img th:src="@{/images/user/loginandreg/login_gril.png}"
+                     alt="香港集運,台灣集貨,新加坡,馬來西亞集運 自助系統"/>
+            </div>
+            <div class="center_right">
+                <div class="frame">
+                    <div class="frameTops">
+                        <h3>注册KGOOS会员</h3>
+                        <p>
+                            已有账号!&nbsp;&nbsp;<a href="login" target="_blank">立即登录</a>
+                        </p>
+                    </div>
+                    <table style="width: 100%">
+                        <tr>
+                            <td class="td1">邮件地址:</td>
+                            <td class="td2"><input type="text" id="email"
+                                                   class="textbox_style" style="width: 220px; height: 28px"
+                                                   placeholder="e.g. abc@hotmail.com"/>*
+                            </td>
+                            <td class="td3">
+                                <div id="emailJS"></div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="td1">密码:</td>
+                            <td class="td2">
+                                <input type="password" id="paw" class="textbox_style" style="width: 220px; height: 28px"
+                                                   placeholder="不能输入空格和特殊字符"/>*
+                            </td>
+                            <td class="td3">
+                                <div id="pawJS"></div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="td1">淘宝账号:</td>
+                            <td class="td2">
+                                <input type="text" id="tbaccount" class="textbox_style" style="width: 220px; height: 28px"
+                                                   placeholder="例如: 李四"/>* <a href="javascript:void(0)">
+                                <img
+                                    class="icon tips" th:src="@{/images/user/help.gif}"
+                                    onclick="showem1()" id="helpimg"
+                                    alt="what is the taobao account"/></a> <em class="message_hover"
+                                                                               id="em1">您的淘宝账号</em></td>
+                            <td class="td3">
+                                <div id="tbaccountJS"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td1">本站用户名:</td>
+                            <td class="td2"><input type="text" id="nickname"
+                                                   class="textbox_style" style="width: 220px; height: 28px"
+                                                   placeholder="例如: 李四"/>*
+                            </td>
+                            <td class="td3">
+                                <div id="nicknameJS"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td1">推荐人会员编号:</td>
+                            <td class="td2"><input type="text" id="introducer"
+                                                   class="textbox_style" style="width: 220px; height: 28px"
+                                                   placeholder="e.g. B801"/></td>
+                            <td class="td3" style="line-height: 25px">输入推荐人的<font
+                                    style="color: #ff0877">会员ID</font>&nbsp; <a
+                                    href="points_bonus.html" target="_blank" class="btn_greensmall">详情</a></td>
+                        </tr>
+                        <tr>
+                            <td class="td1">验证码:</td>
+                            <td class="td2">
+                                <table>
+                                    <tr>
+                                        <td><input type="text" id="confirmcode"
+                                                   class="textbox_style" style="width: 80px; height: 28px"/></td>
+                                        <td><img id="img1" src="image.aspx" width="70px"
+                                                 height="30px" border="0" alt="验证码"/></td>
+                                        <td><a style="color: #0093dd" href="#"
+                                               onclick="changepic()"><img
+                                                th:src="@{/images/user/loginandreg/register_refersh.png}"
+                                                alt="change to others"/>刷新一下</a></td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td class="td3">
+                                <div id="confirmcodeJS"></div>
+                            </td>
+                        </tr>
+                        <tr style="height: 25px; line-height: 25px; font-size: 12px">
+                            <td class="td1"></td>
+                            <td colspan="2" style="text-align: left;">
+                                <table>
+                                    <tr style="height: 25px; line-height: 25px; font-size: 12px">
+                                        <td><input type="checkbox" id="allowsendmail" value=""/></td>
+                                        <td>同意接收本站所发送的Email</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr style="height: 25px; line-height: 25px; font-size: 12px">
+                            <td class="td1"></td>
+                            <td colspan="2" style="text-align: left;">
+                                <table style="height: 25px">
+                                    <tr style="height: 25px; line-height: 25px; font-size: 12px">
+                                        <td><input type="checkbox" id="acceptgerule"/></td>
+                                        <td>本人接受KGOOS所定之条款 [<a href="terms-of-use.html"
+                                                               target="_blank">使用條款及免責聲明</a>] [<a href="cn_bond.html"
+                                                                                                  target="_blank">承運契約條款</a>]
+                                            [<a href="cn_notice.html"
+                                                target="_blank">注意事項</a>]
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td1"></td>
+                            <td class="td2"><input type="button" id="cmdlogin"
+                                                   value="完成注册" class="tbn_dc btn_dcblue_log" style="width: 220px"
+                                                   onclick="return doSubmit()"/></td>
+                            <td class="td3"></td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--引入页脚-->
+<div th:include="page/footer::#page_copy"></div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+/* jQuery UI - v1.12.1 - 2016-09-14
+* http://jqueryui.com */
+
+.ui_selectmenu_menu { padding: 0; margin: 0; position: absolute; top: 0; left: 0; display: none; }
+.ui_selectmenu_menu .ui-menu { overflow: auto; overflow-x: hidden; background: #fff; }
+.ui_selectmenu_menu .ui-menu .ui-selectmenu-optgroup { line-height: 1.5; height: auto; border: 0; }
+.ui-selectmenu-open { display: block; }
+.ui-selectmenu-text { display: block; overflow: hidden; text-overflow: ellipsis; }
+.ui_selectmenu_button.ui-button { text-align: left; white-space: nowrap; width: 14em; }
+
+.ui-tabs { position: relative; padding: 0; }
+.ui-tabs .ui_tabs_nav { margin: 0; padding: 0; }
+.ui-tabs .ui_tabs_nav:after { content: ''; display: block; clear: both; line-height: 0; height: 0; visibility: hidden; }
+.ui-tabs .ui_tabs_nav li { list-style: none; float: left; position: relative; margin: 0; border-bottom: 0; padding: 0; white-space: nowrap; }
+.ui-tabs .ui_tabs_nav .ui-tabs-anchor { text-decoration: none; }
+.ui-tabs .ui_tabs_nav li.ui-tabs-active .ui-tabs-anchor,
+.ui-tabs .ui_tabs_nav li.ui-state-disabled .ui-tabs-anchor,
+.ui-tabs .ui_tabs_nav li.ui-tabs-loading .ui-tabs-anchor { cursor: text; }
+.ui-tabs-collapsible .ui_tabs_nav li.ui-tabs-active .ui-tabs-anchor { cursor: pointer; }
+.ui-tabs .ui_tabs_panel { display: block; border-width: 0; padding: 0; background: none; }
+

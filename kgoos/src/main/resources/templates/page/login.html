@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta content="text/html;charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link th:href="@{/css/normalize.css}" rel="stylesheet"/>
+    <link th:href="@{/css/owl.carousel.css}" rel="stylesheet"/>
+    <link th:href="@{/css/jquery-ui.css}" rel="stylesheet"/>
+    <link th:href="@{/css/main.css}" rel="stylesheet"/>
+    <script type="text/javascript" th:src="@{/framewk/jquery-1.10.2.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/jquery-ui.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/owl.carousel.js}"></script>
+    <script type="text/javascript" th:src="@{/js/script.js}"></script>
+    <script type="text/javascript" th:src="@{/js/formenu.js}"></script>
+    <link rel="stylesheet"
+          th:href="@{/css/user/base_input.css}" type="text/css"/>
+    <link rel="stylesheet"
+          th:href="@{/css/user/reg_login.css}" type="text/css"/>
+    <script type="text/javascript" th:src="@{/js/formenu.js}"></script>
+    <link rel="shortcut icon" th:href="@{/images/user/20logo.png}"/>
+    <link rel="Bookmark" th:href="@{/images/user/20logo.png}"/>
+    <title>会员登录</title>
+</head>
+<body>
+<form method="post" action="user/login">
+    <div class="aspNetHidden">
+        <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+               value="/wEPDwUJOTk2MDA3NzM2ZGQp6lt7DDim1G0MItqTv9UDJeh8bLfleGDxhtZ0Km/F/g=="/>
+    </div>
+    <div class="aspNetHidden">
+
+        <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION"
+               value="/wEWBALdiNejBAKl1bKdCALKw6LYBQKFoZOSAcZnXBSH1JE9wRJEsx2VNeGvhBqnQhMKn/717D/1mtla"/>
+    </div>
+    <div class="logheader">
+        <div class="logobar">
+            <img th:src="@{/images/user/login_logo.png}" alt="KGoos集运"/>
+        </div>
+        <div class="tofirstpgbar">
+            <a href="/"><img th:src="@{/images/user/loginandreg/login_home.png}"
+                             alt="back to home"/>
+                返回首页</a>
+        </div>
+    </div>
+
+    <div class="bodymain_full">
+        <div class="bodymain_1300">
+            <div class="logincontent">
+                <div class="center_left">
+                    <img th:src="@{/images/user/loginandreg/login_gril.png}"
+                         alt="香港集運,台灣集貨,新加坡,馬來西亞集運 自助系統"/>
+                </div>
+                <div class="center_right">
+                    <div class="frame">
+                        <div class="divnull"></div>
+                        <div class="frameTops">
+                            <h3>KGOOS会员登录</h3>
+                            <p>
+                                没有账号？&nbsp;&nbsp;<a href="register" target="_blank">马上注册</a>
+                            </p>
+                        </div>
+
+                        <div>
+                            邮件 :&nbsp; <input name="txtusername" type="text"
+                                              id="txtusername" class="textbox_style"
+                                              style="width: 250px; height: 30px"/>
+                        </div>
+                        <div>
+                            密码 :&nbsp; <input name="txtpass" type="password" id="txtpass"
+                                              class="textbox_style" style="width: 250px; height: 30px"/>
+                        </div>
+                        <div style="margin-left: 30px; margin-top: 10px;">
+                            <input type="submit" name="cmdlogin" value="登 录" id="cmdlogin"
+                                   class="tbn_dc btn_dcblue_log" style="width: 250px;"/>
+
+                        </div>
+                        <div class="frameTops">
+                            <p>
+                                <a href="user/forgetpwd" target="_blank">忘密码了?</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<div th:include="page/footer::footer"></div>
+</body>
+</html>

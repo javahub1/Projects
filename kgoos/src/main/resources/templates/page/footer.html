@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta content="text/html;charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title> This page is used for other page!</title>
+</head>
+<body>
+
+<div th:fragment="footer">
+    <div class="pagr-footer" th:fragment="footer">
+        <div class="footer_wrapper">
+            <div class="columns">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <a href="/"> <img src="images/logo-footer.png" alt="KGOOS 集运"/>
+                        </a>
+                    </div>
+                    <div class="footer-contact">
+                        <div class="tel">
+                            <div class="title">
+                                <span>旺旺</span>
+                            </div>
+                            <div class="content">
+                                <a
+                                        href="http://www.taobao.com/webww/ww.php?ver=3&amp;touid=tomkevin886&amp;siteid=cntaobao&amp;status=2&amp;charset=utf-8"
+                                        class="taobao" target="_blank"> <img
+                                        src="images/image-taobao.jpg" alt="淘宝"/>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="email">
+                            <div class="title">
+                                <span>邮箱</span>
+                            </div>
+                            <div class="content">
+                                <a href="mailto:xxxx@sina.com">xxxx@sina.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-menu">
+                    <ul class="menu">
+                        <li class="level-1">
+                            <div class="title">新手帮助</div>
+                            <ul class="menu">
+                                <li class="level-2"><a href="toHkHelp.html"
+                                                       title="国内到香港/澳门"><span>国内到香港/澳门</span></a></li>
+                                <li class="level-2"><a href="toTwHelp.html"
+                                                       title="国内到台湾"><span>国内到台湾</span></a></li>
+                                <li class="level-2"><a href="toXjpHelp.html"
+                                                       title="国内到新加坡/马来西亚"><span>国内到新加坡/马来西亚</span></a></li>
+                                <li class="level-2"><a href="toOtherControuny.html"
+                                                       title="国内到海外其他国家"><span>国内到海外其他国家</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="level-1">
+                            <div class="title">国内仓</div>
+                        </li>
+
+                        <li class="level-1">
+                            <div class="title">帮助中心</div>
+                            <ul class="menu">
+                                <li class="level-2"><span style="color:white;">常见问题及解答</span></li>
+                            </ul>
+                        </li>
+                        <li class="level-1">
+                            <div class="title">联系我们</div>
+                            <ul class="menu">
+                                <li class="level-2"><span style="color:white;">联系电话:xxxx-yyyy</span></li>
+                                <li class="level-2"><span style="color:white;">地址:</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="qr-code">
+                    <div class="text">
+                        <a href="cn_app.html">IOS App</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/ios-app200.jpg" width="110px" height="110px"
+                             alt="buyup ios app"/>
+                    </div>
+                </div>
+                <div class="qr-code2">
+                    <div class="text">
+                        <a href="cn_app.html">Android App</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/android_barcode.gif" width="110px" height="110px"
+                             alt="buyup android app"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="page_copy">
+
+            <div class="footer_bottom">
+                <div class="columns">
+                    <div class="bottom-wrapper">
+                        <div class="copyright">© 2018 KGOOS 版权所有</div>
+                        <div class="bottom-menu">
+                            <ul>
+                                <li><a href="contact_us.html" title="公司简介"><span>公司简介</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,207 @@
+
+
+ .bodymain_full
+{
+    margin:0 auto;
+	text-align:center;
+	width:100%;
+	background-color:#2e9ed7;
+    }
+
+ /*login*/
+.bodymain_1300
+{
+    margin:0 auto;
+	text-align:center;
+	width:1260px;
+    }
+.logheader
+{
+    width:100%; 
+    height:115px;
+    }
+.logobar
+{
+   margin-top:20px;
+   margin-left:60px;
+   margin-bottom:20px;
+   text-align:left;
+   float:left;
+   width:600px
+    }
+.tofirstpgbar
+{
+   margin-top:30px;
+   margin-bottom:20px;
+   float:left;
+   width:520px;
+   text-align:right;
+   }
+   
+.logincontent
+{
+     height:582px;
+}
+.logincontent .center_left
+{
+    float:left;
+    width:576px;
+    text-align:left;
+    }
+.logincontent .center_right
+{
+    float:right;
+    width:550px;
+    vertical-align:middle; 
+    
+    }
+
+.logincontent .frame
+{
+    width:400px;
+    height:356px;
+    margin-top:80px;
+    background-color:#ffffff;
+    line-height:60px;
+    border: 4px solid #2091cb;
+    }
+
+.logincontent .frameTops{width:90%;margin:0 auto 20px;overflow:hidden;}
+.logincontent .frameTops h3{float:left;overflow:hidden;font-size:16px; color:#ff8b1a}
+.logincontent .frameTops p{float:right;text-align:right}
+.logincontent .frameTops p a{color:#22a1e2}
+
+/*forget paw*/
+.forgetpawcontent
+{
+   height:582px;
+}
+.forgetpawcontent .center_left
+{
+    float:left;
+    width:576px;
+    text-align:left;
+    }
+.forgetpawcontent .center_right
+{
+    float:right;
+    width:652px;
+    vertical-align:middle; 
+    }
+.forgetpawcontent .frame
+{
+    width:652px;
+    margin-top:80px;
+    padding-bottom:20px;
+    background-color:#ffffff;
+    line-height:60px;
+    border: 4px solid #2091cb;
+    }
+.forgetpawcontent .frame a {color:#22a1e2;}
+.forgetpawcontent .frameTops{width:95%;margin:0 auto 20px;overflow:hidden; border-bottom: 1px solid #2e9ed7;}
+.forgetpawcontent .frameTops h3{float:left;overflow:hidden;font-size:18px;color:#ff8b1a}
+.forgetpawcontent .frameTops p{float:right;text-align:right}
+.forgetpawcontent .frameTops p a{color:#22a1e2}
+.forgetpawcontent table{ border:0;}
+.forgetpawcontent tr{ height:42px; line-height:42px; text-align:center;}
+.forgetpawcontent .td1{ width:22%; text-align:left; padding-left:40px;}
+.forgetpawcontent .td2{ width:40%; text-align:left;}
+.forgetpawcontent .td3{ width:38%; text-align:left;}
+
+.borderdiv
+{
+    margin:0 auto;
+	text-align:center;
+	width:1200px;
+	height:400px;
+    border:1px solid #aaa9a9;
+    }
+.divnull{ height:20px;}
+
+.forgotmail{width:100%; text-align:center;margin-left:auto;margin-right:auto; padding-bottom:20px;}
+
+.mailenter
+{
+    width:700px; 
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:20px;
+    }
+.mailenter tr{ height:50px; line-height:50px;}
+
+.mailenter img{ margin-left:auto;margin-right:auto;}
+
+/*register*/
+.regcontent
+{
+   height:645px;
+}
+.regcontent .center_left
+{
+    float:left;
+    width:576px;
+    text-align:left;
+    }
+.regcontent .center_right
+{
+    float:right;
+    width:675px;
+    vertical-align:middle; 
+    }
+.regcontent .frame
+{
+    width:675px;
+    margin-top:20px;
+    padding-bottom:20px;
+    background-color:#ffffff;
+    line-height:60px;
+    border: 4px solid #2091cb;
+    }
+.regcontent .frame a {color:#22a1e2;}
+.regcontent .frameTops{width:95%;margin:0 auto 20px;overflow:hidden;color:#444; border-bottom: 1px solid #2e9ed7;}
+.regcontent .frameTops h3{float:left;overflow:hidden;font-size:16px;color:#ff8b1a}
+.regcontent .frameTops p{float:right;text-align:right}
+.regcontent .frameTops p a{color:#22a1e2}
+.regcontent table{ border:0;}
+.regcontent tr{ height:45px; line-height:45px; text-align:center;}
+.regcontent .td1{ width:22%; text-align:left; padding-left:20px;}
+.regcontent .td2{ width:40%; text-align:left;}
+.regcontent .td3{ width:38%; text-align:left;}
+.checkboxandfont
+{
+    height:25px; 
+    line-height:25px;
+    font-size:12px
+}
+.spcfonts_reglog{ color:#ff0877; font-weight:bold;}
+.logfooter 
+{
+    width:100%; 
+    height:40px;
+}
+.logfooter .footerbar
+{
+    padding-top:20px;
+    padding-left:50px;
+    text-align:left;
+}
+
+/*message*/
+.message_hover {
+ background: url(../images/bg/hover_message.png) no-repeat;
+ 
+ width: 180px;
+ height: 45px;
+ position: absolute;
+ /*top: -85px;
+ left: -15px;*/
+ text-align: center;
+ padding: 20px 12px 10px;
+ font-style: normal;
+ z-index: 999;
+ display:none;
+}
+
+    
+    

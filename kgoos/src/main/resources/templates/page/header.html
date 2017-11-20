@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta content="text/html;charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title> This page is used for other page!</title>
+</head>
+<body>
+<div th:fragment="header">
+
+    <div class="page-header">
+        <div class="columns">
+            <div class="logo">
+                <a href="/"> <img src="images/logo.png" alt="KGOOS 集运"/>
+                </a>
+            </div>
+            <div class="nav-sections">
+                <div class="navigation">
+                    <ul class="menu">
+                        <li class="active"><a href="/" title="首页"><span>首页</span></a></li>
+                        <li class="active" onmousemove="showmenu_header(this)"
+                            onmouseout="hidemenu_header(this)"><a href="index.jsp"
+                                                                  title="开始集运"><span>开始集运</span></a>
+                            <ul>
+                                <li><a href="warehouseAddress">集运仓库专属地址</a></li>
+                                <li><a href="cargoClaim">货物认领&amp;集运</a></li>
+                                <li><a href="myOrder">我的订单</a></li>
+                                <li><a href="userCenter">个人资料</a></li>
+                                <li><a href="setAccount">设置账户</a></li>
+                                <li><a href="setAddress">设置地址</a></li>
+                                <li><a href="integral">积分</a></li>
+                                <li><a href="kgoosCoins">快购币</a></li>
+                                <li><a href="cashPrepaid ">快购币兑换/充值</a></li>
+                                <li><a href="coupons">优惠券</a></li>
+                                <li><a href="promoteLinks">推广链接</a></li>
+                            </ul>
+                        </li>
+                        <li class="active"><a href="index.html" title="快购商城"><span>快购商城</span></a></li>
+                        <li class="active"><a href="index.html" title="最新消息"><span>最新消息</span></a></li>
+
+                        <li class="active" onmousemove="showmenu_header(this)"
+                            onmouseout="hidemenu_header(this)"><a href="index.jsp"
+                                                                  title="集运教学"> <span>集运教学</span></a>
+                            <ul>
+                                <li><a href="teachingVideo">教学视频</a></li>
+                                <li><a href="teachingGraphic">教学图解</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="jsp/cn_inquire.jsp" title="物流跟踪"><span>物流跟踪</span></a></li>
+                        <!--<li><a href="jsp/cn_inquire.jsp" title="常见问题解答"><span>常见问题解答</span></a></li>-->
+                        <!--<li><a href="jsp/cn_inquire.jsp" title="联系我们"><span>联系我们</span></a></li>-->
+                    </ul>
+                </div>
+            </div>
+
+            <div class="top_menu" id="top_menu">
+                <ul class="menu">
+                    <li><a href="page/login.jsp" title="用户名"><span>用户名</span></a></li>
+                    <li><a href="page/login.jsp" title="会员编号"><span>会员编号</span></a></li>
+                    <li><a href="page/login" title="登录"><span>登录</span></a></li>
+                    <li><a href="page/register" title="注册"><span>注册</span></a></li>
+                    <li><a href="page/register.jsp" title="站内信"><span>站内信</span></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
