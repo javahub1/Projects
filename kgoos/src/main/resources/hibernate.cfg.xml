@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <!-- 配置连接MySQL数据库的基本信息 -->
+    <!--<property name="connection.driver_class">com.mysql.jdbc.Driver</property>-->
+    <!--<property name="connection.url">jdbc:mysql:///hibernate</property>-->
+    <!--<property name="connection.username">root</property>-->
+    <!--<property name="connection.password">123456</property>-->
+
+    <!-- 配置连接SQL-Server2008数据库的基本信息 -->
+    <property name="connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+    <property name="connection.url">jdbc:sqlserver://localhost</property>
+    <property name="dialect">org.hibernate.dialect.SQLServerDialect</property>
+
+    <!-- 配置 Hibernate 的基本信息 -->
+    <property name="show_sql">true</property>
+    <property name="format_sql">true</property>
+    <!-- 指定自动生成数据表的策略 -->
+    <property name="hbm2ddl.auto">update</property>
+    <mapping class="com.kgoos.app.entity.KgosCustomer"/>
+
+
+  </session-factory>
+
+  <!--oracle-->
+  <!--driver="oracle.jdbc.driver.OracleDriver"-->
+  <!--url="jdbc:oracle:thin:@localhost:1521:数据库名"-->
+  <!--sqlserver-->
+  <!--driver="com.microsoft.jdbc.sqlserver.SQLServerDriver"-->
+  <!--url="jdbc:microsoft:sqlserver://localhost:1433;DatabaseName=数据库名"-->
+  <!--mysql-->
+  <!--driver="com.mysql.jdbc.Driver"-->
+  <!--url="jdbc:mysql://localhost/数据库名?[后接参数]"-->
+  <!--db2-->
+  <!--driver="com.ibm.db2.jdbc.app.DB2Driver"-->
+  <!--url="jdbc:db2://localhost:5000/数据库名"-->
+  <!--sybase-->
+  <!--driver="com.sybase.jdbc.SybDriver"-->
+  <!--url="jdbc:sybase:Tds:localhost:5007/数据库名"-->
+
+</hibernate-configuration>
