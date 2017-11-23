@@ -1,15 +1,13 @@
 package com.kgoos.app.entity;
 
-import javax.persistence.Basic;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.Serializable;
 import java.sql.Timestamp;
 
-@Entity
-@Table(name = "KGOS_Customer", schema = "dbo", catalog = "BestGain_KGOS")
+//@Entity
+//@Table(name = "KGOS_Customer", schema = "dbo", catalog = "BestGain_KGOS")
 public class KgosCustomer {
+    @Id
     private long custSn;
     private String custMail;
     private String custName;
