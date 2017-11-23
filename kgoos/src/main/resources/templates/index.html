@@ -4,48 +4,30 @@
     <meta content="text/html;charset=UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link th:href="@{css/normalize.css}" rel="stylesheet"/>
-    <link th:href="@{css/owl.carousel.css}" rel="stylesheet"/>
-    <link th:href="@{css/jquery-ui.css}" rel="stylesheet"/>
-    <link th:href="@{css/main.css}" rel="stylesheet"/>
-    <script type="text/javascript" th:src="@{framewk/jquery-1.10.2.min.js}"></script>
-    <script type="text/javascript" th:src="@{js/jquery-ui.min.js}"></script>
-    <script type="text/javascript" th:src="@{js/owl.carousel.js}"></script>
-    <script type="text/javascript" th:src="@{js/script.js}"></script>
-    <script type="text/javascript" th:src="@{js/formenu.js}"></script>
+    <link th:href="@{css/bootstrap.min.css}" rel="stylesheet"/>
+    <link th:href="@{css/styles.css}" rel="stylesheet"/>
+    <!--<link th:href="@{css/main.css}" rel="stylesheet"/>-->
+    <script type="text/javascript" th:src="@{js/jquery.min.js}"></script>
+    <script type="text/javascript" th:src="@{js/bootstrap.min.js}"></script>
     <title>Kgoos 首页</title>
 </head>
 <body>
-<!--引入header部分-->
-<div th:include="page/header::header"></div>
+    <div class="page_wrapper">
+        <!--引入header部分-->
+        <div th:include="page/header::header"></div>
 
-<h1>KGOOS 项目的首页,建设中...</h1>
-<h1>KGOOS 项目的首页,建设中...</h1>
-<div>
-    <p>新用户注册即可获得100积分，推荐新用戶使用可得到更多积分!! 积分可用于快购集运所有相关服务平台，抵消所需费用 <a>立即注册</a></p>
-</div>
-
-
-<div>
-    <p>集运简单流程图：1网站注册获得会员编号 2國內購物寄至中國倉庫 3到網站認領&amp;合拼訂單 4集運物品寄出 5收貨或到門市取貨</p>
-</div>
-<div>
-
-    <p>快购自营商品</p>
-</div>
-
-
-<div>
-    <p>集运客户评价</p>
-
-</div>
-
-
-<marquee direction="left"><h1> KGOOS 项目的首页,建设中,敬请期待!</h1></marquee>
-
-<!--引入页脚-->
-<div th:include="page/footer::footer"></div>
-
-
+        <!--引入body部分-->
+        <div th:include="page/bodyer::bodyer"></div>
+        <!--引入页脚-->
+        <div th:include="page/footer::footer"></div>
+    </div>
 </body>
+<script>
+    $(function(){
+        console.log("What are you doing")
+        // 初始化轮播
+        $("#myCarousel").carousel('cycle');
+
+    });
+</script>
 </html>
