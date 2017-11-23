@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link th:href="@{css/bootstrap.min.css}" rel="stylesheet"/>
+    <link th:href="@{css/owl.carousel.css}" rel="stylesheet"/>
     <link th:href="@{css/styles.css}" rel="stylesheet"/>
     <!--<link th:href="@{css/main.css}" rel="stylesheet"/>-->
     <script type="text/javascript" th:src="@{js/jquery.min.js}"></script>
     <script type="text/javascript" th:src="@{js/bootstrap.min.js}"></script>
+    <script type="text/javascript" th:src="@{js/owl.carousel.js}"></script>
     <title>Kgoos 首页</title>
 </head>
 <body>
@@ -28,6 +30,36 @@
         // 初始化轮播
         $("#myCarousel").carousel('cycle');
 
+        $('.sidebar-main .menu li').each(function(i){
+            var menu = $(this);
+            var toggle = $(this).children('.level-top');
+            if(!menu.hasClass('parent')){ return; }
+            toggle.on('click',function(e){
+                if(!menu.hasClass('menu-opened')){
+                    menu.addClass('menu-opened').siblings().removeClass('menu-opened');
+                } else {
+                    menu.removeClass('menu-opened');
+                }
+            });
+        });
+
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:5
+                }
+            }
+        })
+        /*rooter*/
     });
 </script>
 </html>
