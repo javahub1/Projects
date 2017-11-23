@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta content="text/html;charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title> This page is used for other page!</title>
+</head>
+<body>
+
+<div th:fragment="bodyer">
+        <div class="bodyer_wrapper">
+            <div class="page-main">
+				<div id="myCarousel" class="carousel slide">
+					<!-- 轮播（Carousel）指标 -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+					</ol>
+
+					<!-- 轮播（Carousel）项目 -->
+					<div class="carousel-inner">
+						<div class="banner-item item active">
+							<img style="width: 100%;" src="images/banners/banner-points-bonus.jpg" alt="First slide"/>
+						</div>
+						<div class="banner-item item">
+							<img style="width: 100%;" src="images/banners/home_banner_2.jpg" alt="Second slide"/>
+						</div>
+						<div class="banner-item item">
+							<img style="width: 100%;" src="images/banners/home_banner_6.jpg" alt="Third slide"/>
+						</div>
+					</div>
+				</div>
+
+				<div class="columns">
+					<div class="warehouse cn">
+						<div class="left">
+							<h3>國內倉集運</h3>
+							<div class="text">
+								<p>自己在國內電商買了東西?<br/>親友想寄包裹給你?</p>
+								<p>都可以委託我們轉運到<br/>世界各地!</p>
+							</div>
+							<div class="info">
+								辦公時間<br/>
+								周一至周五：10:30-21:30<br/>
+								周六至周日：10:30-20:30
+							</div>
+							<div class="link">
+								<a  title="開始集運"><span>開始集運</span></a>
+							</div>
+						</div>
+						<div class="right">
+							<div class="from-cn">
+								<div class="content">
+									<div class="item to-hk">
+										<div class="image">
+											<img src="images/warehouse/cn/cn-to-hk.png" alt="到香港集運"/>
+										</div>
+										<div class="title">國內倉→香港</div>
+										<div class="info">CN TO HONGKONG</div>
+										<div class="link">
+											<a href="cn-to-hk-intro.html" title="進入了解"><span>進入了解</span></a>
+										</div>
+									</div>
+									<div class="item to-tw">
+										<div class="image">
+											<img src="images/warehouse/cn/cn-to-tw.png" alt="到台灣集貨"/>
+										</div>
+
+										<div class="title">國內倉→台灣</div>
+										<div class="info">CN TO TAIWAN</div>
+										<div class="link">
+											<a href="cn-to-tw-intro.html" title="進入了解"><span>進入了解</span></a>
+										</div>
+									</div>
+									<div class="item to-out-of-sea">
+										<div class="image">
+											<img src="images/warehouse/cn/cn-to-out-of-sea.png" alt="到新加坡、馬來西亞和其它國家的集運"/>
+										</div>
+
+										<div class="title">國內倉→海外</div>
+										<div class="info">CN TO OVER SEA</div>
+										<div class="link">
+											<a href="cn-to-oversea-intro.html" title="進入了解"><span>進入了解</span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="line"><span>line</span></div>
+							<div class="process">
+								<h4>集運流程</h4>
+								<div class="content">
+									<ul>
+										<li>
+											<div class="item-content">
+												<div class="image">
+													<img src="images/warehouse/cn/firstpage/home_step_01.png" alt="國內購物"/>
+												</div>
+												<div class="text">國內購物寄至中國倉庫</div>
+											</div>
+										</li>
+										<li>
+											<div class="item-content">
+												<div class="image">
+													<img src="images/warehouse/cn/firstpage/home_step_02.png" alt="寄至我們中國倉庫"/>
+												</div>
+												<div class="text">到網站認領&amp;合拼訂單</div>
+											</div>
+										</li>
+										<li>
+											<div class="item-content">
+												<div class="image">
+													<img src="images/warehouse/cn/firstpage/home_step_03.png" alt="到網站認領"/>
+												</div>
+												<div class="text">集運物品寄出</div>
+											</div>
+										</li>
+										<li>
+											<div class="item-content">
+												<div class="image">
+													<img src="images/warehouse/cn/firstpage/home_step_04.png" alt="下訂單要求合併物品"/>
+												</div>
+												<div class="text">收貨或到門市取貨</div>
+											</div>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+					<div class="shopping_share">
+						<h3>購物&amp;集運分享</h3>
+						<div class="share-wrapper owl-carousel owl-theme owl-responsive--1 owl-loaded" id="sharelist_show">
+							<div class="owl-stage-outer">
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+</div>
+</body>
+</html>
